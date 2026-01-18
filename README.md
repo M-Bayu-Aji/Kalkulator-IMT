@@ -1,9 +1,9 @@
 # 🏋️‍♂️ Kalkulator IMT - Aplikasi Kesehatan
 
 ![IMT Calculator](https://img.shields.io/badge/Health-App-blue?style=for-the-badge&logo=heart&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## 🌟 Tentang Proyek
 
@@ -12,8 +12,8 @@ Selamat datang di **Kalkulator IMT**! 🎉 Ini adalah aplikasi web kesehatan yan
 ### ✨ Fitur Utama
 
 - 🎨 **Desain Modern**: Interface dengan efek glassmorphism dan gradient yang menawan
-- �️ **Visual Menarik**: Gambar kesehatan berkualitas tinggi dengan efek floating dan animasi
-- �📱 **Responsive**: Kompatibel dengan semua perangkat (desktop, tablet, mobile)
+- 🖼️ **Visual Menarik**: Gambar kesehatan berkualitas tinggi dengan efek floating dan animasi
+- 📱 **Responsive**: Kompatibel dengan semua perangkat (desktop, tablet, mobile)
 - ⚡ **Real-time Validation**: Validasi input otomatis untuk memastikan data akurat
 - 🎯 **Hasil Instan**: Hitung IMT dengan cepat dan dapatkan kategori kesehatan Anda
 - 🌈 **Animasi Halus**: Transisi dan animasi yang membuat pengalaman lebih menarik
@@ -23,11 +23,12 @@ Selamat datang di **Kalkulator IMT**! 🎉 Ini adalah aplikasi web kesehatan yan
 
 ## 🚀 Teknologi yang Digunakan
 
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
-- **Styling**: Custom CSS dengan efek glassmorphism
+- **Framework**: Next.js 14+
+- **Language**: TypeScript
+- **Styling**: CSS3 dengan efek glassmorphism
 - **Fonts**: Google Fonts (Poppins)
 - **Icons**: Font Awesome 6.5.1
-- **Server**: XAMPP (PHP Environment)
+- **Runtime**: Node.js
 
 ## 🎨 Preview & Fitur Visual
 
@@ -47,6 +48,8 @@ Layout responsif yang menyesuaikan menjadi satu kolom dengan gambar di atas
 
 ## 📋 Persyaratan Sistem
 
+- Node.js 18.17 atau lebih baru
+- npm atau yarn atau pnpm
 - Browser modern (Chrome, Firefox, Safari, Edge)
 - Koneksi internet untuk load fonts dan icons eksternal
 
@@ -58,7 +61,32 @@ git clone https://github.com/M-Bayu-Aji/kalkulator-imt.git
 cd kalkulator-imt
 ```
 
-### Langkah 2: Jalankan Aplikasi
+### Langkah 2: Install Dependencies
+```bash
+npm install
+# atau
+yarn install
+# atau
+pnpm install
+```
+
+### Langkah 3: Jalankan Development Server
+```bash
+npm run dev
+# atau
+yarn dev
+# atau
+pnpm dev
+```
+
+### Langkah 4: Buka Aplikasi
+Buka browser dan akses [http://localhost:3000](http://localhost:3000)
+
+### Build untuk Production
+```bash
+npm run build
+npm start
+```
 
 ## 📖 Cara Penggunaan
 
@@ -79,10 +107,20 @@ cd kalkulator-imt
 ## 🔧 Struktur Proyek
 
 ```
-imt/
-├── index.html          # File utama HTML
-├── style.css           # Styling dan animasi
-└── README.md           # Dokumentasi proyek
+kalkulator-imt/
+├── app/
+│   ├── page.tsx           # Halaman utama
+│   ├── layout.tsx         # Root layout
+│   └── globals.css        # Global styles
+├── components/
+│   ├── Calculator.tsx     # Komponen kalkulator
+│   └── ...
+├── public/
+│   └── images/            # Gambar dan assets
+├── package.json           # Dependencies
+├── tsconfig.json          # TypeScript config
+├── next.config.js         # Next.js config
+└── README.md              # Dokumentasi proyek
 ```
 
 ## 🤝 Kontribusi
@@ -118,6 +156,8 @@ Dibuat dengan ❤️ oleh [Muhammad Bayu Aji]
 
 ## 🙏 Acknowledgments
 
+- **Next.js** untuk framework React yang powerful
+- **TypeScript** untuk type safety yang lebih baik
 - **Google Fonts** untuk font Poppins yang elegan
 - **Font Awesome** untuk ikon yang indah
 - **CSS Tricks** untuk inspirasi glassmorphism effect
